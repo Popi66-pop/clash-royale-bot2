@@ -1,0 +1,9 @@
+{
+  "id": "e-carta",
+  "name": "Carta",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": true
+}
