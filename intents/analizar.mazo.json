@@ -1,0 +1,53 @@
+{
+  "name": "analizar.mazo",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "p-cartas",
+          "name": "Cartas",
+          "required": true,
+          "dataType": "@Carta",
+          "value": "$Cartas",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": ["¿Qué cartas tiene el mazo? Dime al menos 4."]
+        }
+      ],
+      "messages": [],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "data": [
+        {"text": "Analiza mi mazo con "},
+        {"text": "montapuercos", "alias": "Cartas", "meta": "@Carta"},
+        {"text": ", "},
+        {"text": "pekka", "alias": "Cartas", "meta": "@Carta"},
+        {"text": " y "},
+        {"text": "tronco", "alias": "Cartas", "meta": "@Carta"}
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {"text": "¿Es bueno mi mazo de "},
+        {"text": "mega caballero", "alias": "Cartas", "meta": "@Carta"},
+        {"text": "?"}
+      ],
+      "isTemplate": false
+    }
+  ]
+}
