@@ -1,0 +1,40 @@
+{
+  "name": "sugerir.counter",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "parameters": [
+        {
+          "id": "p-carta",
+          "name": "Carta",
+          "required": true,
+          "dataType": "@Carta",
+          "value": "$Carta",
+          "isList": false,
+          "prompts": ["¿A qué carta te refieres?"]
+        }
+      ],
+      "messages": [],
+      "webhookUsed": true
+    }
+  ],
+  "userSays": [
+    {
+      "data": [
+        {"text": "¿Cómo paro al "},
+        {"text": "Mega Caballero", "alias": "Carta", "meta": "@Carta"},
+        {"text": "?"}
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {"text": "Dime counters del "},
+        {"text": "montapuercos", "alias": "Carta", "meta": "@Carta"}
+      ],
+      "isTemplate": false
+    }
+  ]
+}
