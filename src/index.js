@@ -83,7 +83,7 @@ app.post('/webhook', (req, res) => {
             responseText = "¡Hola! Soy tu coach de Clash Royale. ⚔️\nPuedo analizar tu mazo o decirte counters de cartas.\nEj: 'Analiza mi mazo de monta y pekka' o '¿Cómo paro al Mega Caballero?'";
             break;
         default:
-            responseText = "No tengo una estrategia definida para esa pregunta aún.";
+            responseText = "No tengo una estrategia definida para esa pregunta aún. ${intentName}`;
     }
 
     res.json({
@@ -93,3 +93,4 @@ app.post('/webhook', (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Servidor Clash Royale listo en puerto ${PORT}`));
+
